@@ -9,10 +9,12 @@ Unlike basic applications that lose data after exiting, CivisID stores all citiz
 
 The system intelligently adapts based on Gender and Marital Status:
 
-Citizen Type	Relative Prompt
-Married Male	Wife’s Name
-Married Female	Husband’s Name
-Unmarried	Father’s Name
+| Citizen Type   | Relative Prompt |
+| -------------- | --------------- |
+| Married Male   | Wife’s Name     |
+| Married Female | Husband’s Name  |
+| Unmarried      | Father’s Name   |
+
 
 This mirrors real government documentation patterns.
 
@@ -93,9 +95,11 @@ National-ID-System/
 https://github.com/udayraj-rgb/CivisID-National-ID-Registry-System-24BCE11159
 
 2️⃣ Compile All Java Files
+
 javac *.java
 
 3️⃣ Run the Application
+
 java NationalIDApp
 
 📊 Sample CSV Output
