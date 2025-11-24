@@ -123,6 +123,7 @@ National-ID-System/
 └── NationalIDApp.java    # Main controller (menu, scanner, hash map, CRUD)
 
 ⚙️ How to Run
+
 1️⃣ Clone the Repository
 
 https://github.com/udayraj-rgb/CivisID-National-ID-Registry-System-24BCE11159.git
