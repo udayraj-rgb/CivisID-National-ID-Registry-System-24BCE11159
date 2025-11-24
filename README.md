@@ -32,10 +32,12 @@ Overall, CivisID replicates the fundamental features of national ID systems (sim
 
 The system intelligently adapts based on Gender and Marital Status:
 
-Citizen Type	Relative Prompt
-Married Male	Wife’s Name
-Married Female	Husband’s Name
-Unmarried	Father’s Name
+| Citizen Type   | Relative Prompt |
+| -------------- | --------------- |
+| Married Male   | Wife’s Name     |
+| Married Female | Husband’s Name  |
+| Unmarried      | Father’s Name   |
+
 This mirrors real government documentation patterns.
 
 ✅ 2. Secure 7-Digit Random National ID
@@ -130,9 +132,11 @@ java NationalIDApp
 
 📊 Sample CSV Output
 
-National ID	Name	Age	Gender	Relation	Phone	Email
-7829103	Rahul Sharma	34	Male	Wife: Priya	9876543210	rahul@gov.in
-1928374	Aditi Rao	29	Female	Father: Raj	9123456789	aditi@gov.in
+| National ID | Name         | Age | Gender | Relation    | Phone      | Email                               |
+| ----------- | ------------ | --- | ------ | ----------- | ---------- | ----------------------------------- |
+| 7829103     | Rahul Sharma | 34  | Male   | Wife: Priya | 9876543210 | [rahul@gov.in](mailto:rahul@gov.in) |
+| 1928374     | Aditi Rao    | 29  | Female | Father: Raj | 9123456789 | [aditi@gov.in](mailto:aditi@gov.in) |
+
 🔮 Future Enhancements
 
 JavaFX/Swing GUI for a modern desktop interface
