@@ -114,6 +114,7 @@ File I/O	FileWriter	Persistent CSV storage
 Error Handling	try-catch	Prevents crashes and invalid data
 
 National-ID-System/
+
 │
 ├── Citizen.java          # Model class for citizen data (POJO)
 
