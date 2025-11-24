@@ -82,16 +82,15 @@ Data Structure	HashMap<String, Citizen>	O(1) fast retrieval of records
 OOP	Encapsulation	Protects data integrity
 File I/O	FileWriter	Persistent CSV storage
 Error Handling	try-catch	Prevents crashes and invalid data
-📂 Project Structure (MVC-Style Architecture)
-📦 National-ID-System
- ┣ 📜 Citizen.java         # MODEL - defines citizen blueprint (fields + getters/setters)
- ┣ 📜 FileHandler.java     # UTILITY - handles CSV writing & file checks
- ┗ 📜 NationalIDApp.java   # CONTROLLER - main logic, menu, interaction flow
+National-ID-System/
+│
+├── Citizen.java          # Model class for citizen data (POJO)
+├── FileHandler.java      # Handles CSV file creation & data writing
+└── NationalIDApp.java    # Main controller (menu, scanner, hash map, CRUD)
 
 ⚙️ How to Run
 1️⃣ Clone the Repository
-git clone https://github.com/YourUsername/CivisID.git
-cd CivisID
+https://github.com/udayraj-rgb/CivisID-National-ID-Registry-System-24BCE11159
 
 2️⃣ Compile All Java Files
 javac *.java
@@ -101,13 +100,11 @@ java NationalIDApp
 
 📊 Sample CSV Output
 
-The app generates a structured citizens.csv file like:
+| National ID | Name         | Age | Gender | Relation    | Phone      | Email                               |
+| ----------- | ------------ | --- | ------ | ----------- | ---------- | ----------------------------------- |
+| 7829103     | Rahul Sharma | 34  | Male   | Wife: Priya | 9876543210 | [rahul@gov.in](mailto:rahul@gov.in) |
+| 1928374     | Aditi Rao    | 29  | Female | Father: Raj | 9123456789 | [aditi@gov.in](mailto:aditi@gov.in) |
 
-NationalID	Name	Age	Gender	Relation	Phone	Email	Address	DateRegistered
-7829103	Rahul Sharma	34	Male	Wife: Priya	9876543210	rahul@gov.in
-	12 MG Road	2025/11/24
-1928374	Aditi Rao	29	Female	Father: Raj	9123456789	aditi@gov.in
-	45 Indiranagar	2025/11/24
 🔮 Future Enhancements
 
 JavaFX/Swing GUI for a modern desktop interface
