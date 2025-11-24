@@ -86,15 +86,23 @@ Implements defensive programming to ensure the application remains stable. It gr
 The project follows a clean separation of concerns, heavily inspired by the Model-View-Controller pattern to ensure code readability and scalability:
 
 📦 National-ID-System
- ┣ 📜 Citizen.java        # MODEL: The Plain Old Java Object (POJO) that defines the blueprint 
- ┃                        # for a citizen. It holds the state (data attributes) and behavior 
- ┃                        # (constructors/getters/setters), independent of how data is saved.
- ┣ 📜 FileHandler.java    # UTILITY: A dedicated class solely for File I/O operations. It abstracts 
- ┃                        # the complexity of CSV writing, file existence checks, and formatting 
- ┃                        # away from the main business logic, adhering to the Single Responsibility Principle.
- ┗ 📜 NationalIDApp.java  # CONTROLLER: The entry point of the application. It handles the 
-                          # execution loop, processes user input via Scanner, manages the menu UI,
-                          # and orchestrates data flow between the Model and the FileHandler.
+ ┣ 📜 Citizen.java      
+ 
+ # MODEL: The Plain Old Java Object (POJO) that defines the blueprint 
+ # for a citizen. It holds the state (data attributes) and behavior 
+  # (constructors/getters/setters), independent of how data is saved.
+  
+ ┣ 📜 FileHandler.java  
+ 
+ # UTILITY: A dedicated class solely for File I/O operations. It abstracts 
+ # the complexity of CSV writing, file existence checks, and formatting 
+  # away from the main business logic, adhering to the Single Responsibility Principle.
+  
+ ┗ 📜 NationalIDApp.java  
+ 
+ # CONTROLLER: The entry point of the application. It handles the 
+ # execution loop, processes user input via Scanner, manages the menu UI,
+ # and orchestrates data flow between the Model and the FileHandler.
 
 
 ⚙️ How to Run
@@ -102,8 +110,7 @@ The project follows a clean separation of concerns, heavily inspired by the Mode
 Clone the Repository
 Ensure you have Git installed on your machine to download the source code.
 
-git clone [https://github.com/YourUsername/CivisID.git](https://github.com/YourUsername/CivisID.git)
-cd CivisID
+https://github.com/udayraj-rgb/CivisID-National-ID-Registry-System-24BCE11159
 
 
 Compile the Code
@@ -116,65 +123,6 @@ Run the Application
 Execute the main controller class to start the interactive session:
 
 java NationalIDApp
-
-
-📊 Sample Data (CSV Output)
-
-Upon registration, the system automatically generates or updates the citizens.csv file. The output is structured with clear headers for immediate use in data analysis tools:
-
-NationalID
-
-Name
-
-Age
-
-Gender
-
-Relation
-
-Phone
-
-Email
-
-Address
-
-DateRegistered
-
-7829103
-
-Rahul Sharma
-
-34
-
-Male
-
-Wife: Priya
-
-9876543210
-
-rahul@gov.in
-
-12 MG Road
-
-2025/11/24
-
-1928374
-
-Aditi Rao
-
-29
-
-Female
-
-Father: Raj
-
-9123456789
-
-aditi@gov.in
-
-45 Indiranagar
-
-2025/11/24
 
 🔮 Future Enhancements
 
