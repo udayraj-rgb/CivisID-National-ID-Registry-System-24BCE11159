@@ -41,10 +41,10 @@ Each citizen receives a **non-sequential, unpredictable 7-digit ID**. This incre
 
 ###  3. Permanent CSV Data Storage
 CivisID uses `citizens.csv` to store data persistently.
-* ✔ Auto-creates CSV with headers if missing.
-* ✔ Appends new data safely.
-* ✔ Readable in Excel/Google Sheets.
-* ✔ Follows structured, clean formatting.
+* Auto-creates CSV with headers if missing.
+*  Appends new data safely.
+*  Readable in Excel/Google Sheets.
+* Follows structured, clean formatting.
 
 ###  4. Full CRUD Management
 The administrator has full control over the registry:
@@ -77,13 +77,34 @@ The system captures **15+ essential data points**:
 
 ---
 
-## Project Structure
 
-```text
-National-ID-System/
-│
-├── Citizen.java        # Model class for citizen data (POJO)
-├── FileHandler.java    # Handles CSV file creation & data writing
-└── NationalIDApp.java  # Main controller (Menu, Scanner, Logic, CRUD)
+## ⚙️ How to Run
+```bash
+# Clone the Repository
+https://github.com/udayraj-rgb/CivisID-National-ID-Registry-System-24BCE11159.git
 
+# Compile
+javac *.java
 
+# Run
+java NationalIDApp
+```
+
+## Sample CSV Output
+| NationalID | Name | Age | DOB | Gender | MaritalStatus | Relation | Phone | Email | Address | Pincode | State |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 2145852 | Udayraj Patil | 20 | 25-03-2005 | Male | Unmarried | Father: Suresh Patil | 9999117777 | uday@education.com | Bandra West Mumbai | 34567 | Maharashtra |
+| 5903076 | Rahul Deshmukh | 23 | 20-02-2003 | Male | Unmarried | Father: Shrikant Deshmukh | 7777788999 | rahul@compnay.com | Sahibaug Ahmedabad | 382461 | Gujarat |
+| 5552702 | Neha Gupta | 34 | 16-01-1991 | Female | Married | Husband: Ravi Gupta | 888777902 | neha@gmail.com | Sector-25 Gurugram | 122221 | Haryana |
+| 1186232 | Ashutosh Dubey | 43 | 07-07-1982 | Male | Married | Wife: Sneha Dubey | 7777788891 | ashutosh@exmaple.com | Gandhinagar Lucknow | 2234567 | Uttar Pradesh |
+| 7142094 | Kashish Jain | 21 | 05-03-2004 | Female | Unmarried | Father: Pankaj Jain | 77885469732 | kashish@gmail.com | New Colony Chandigarh | 112234 | Punjab |
+| 9857396 | Shubham Gaikwad | 41 | 23-06-1983 | Male | Married | Wife: Priya Gaikwad | 77896542367 | Shubham123@emali.com | Sarafa Bazar Indore | 3456789 | Madhya Pradesh |
+
+##  Future Enhancements
+* GUI: JavaFX/Swing interface for a modern desktop experience.
+* Database: Integration with MySQL/PostgreSQL via JDBC for large-scale usage.
+* Security: Biometric Hashing (SHA-256 simulation) for ID proofs.
+* Cloud: Sync data via REST APIs (Firebase/AWS).
+* Search: Advanced filtering by Name or Region.
+##  Developed By 
+* Udayraj Patil  National ID System — Educational Prototype for e-Governance Concepts
